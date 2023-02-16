@@ -1,0 +1,306 @@
+:root{
+    --green-dark:#4a6f4b;
+    --green-ligth:#8ebc4d;
+    --orange-dark:#b06939;
+    --orange-ligth:#e0a130;
+    --orange:#F56E00;
+}
+*{
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    color: #000;
+}
+
+header{
+    /*position: sticky;*/
+    /*top: 0;*/
+    background-color: #FFF;
+    height: 80px;
+    
+}
+.header{
+    max-width: 1140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.logo{
+    width: 140px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.logo-img{
+    height: 75px;
+}
+nav{
+    width: 100%;
+    text-align: right;    
+}
+nav ul{
+    list-style: none;       
+}
+
+nav li{
+    display: inline;    
+}
+
+nav li a{
+    color:#000;
+    font-weight: 700;
+    text-decoration: none;
+    margin: 0 20px;      
+}
+nav li a:hover,
+nav .active a{
+    color: var(--orange);
+}
+
+/*---------------------------------------------------*/
+
+.home{
+    height: calc(100vh - 80px);
+    
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.home-content{    
+    width: 100%;
+    max-width: 1000px;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    
+}
+.home-content h1{
+    color:#FFF;
+    font-size: 60px;
+}
+.home-content p{
+    color:#FFF;
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+.home-whats{
+    display: block;
+    border-radius: 25px;    
+    background-color: var(--orange);
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding:10px 30px;
+    margin-top: 20px;
+}
+
+.home-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/*--------------------------------------------------------*/
+
+.aboutus{
+    width: 100%; 
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.section-aboutus{
+    max-width: 1140px;
+    margin: 0px auto;
+}
+.aboutus .content-aboutus{
+    max-width: 1140px; 
+    display: flex;
+}
+
+.aboutus .title{
+    color: var(--orange);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;    
+}
+
+.aboutus .text{
+    width: 570px; 
+    margin-right: 50px;   
+    margin-left: 20px;
+}
+
+.aboutus .text h2{
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.aboutus .text p{
+    font-size: 1rem;
+    margin-right: 90px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.aboutus .section-aboutus .image{
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/conceitual.jpg);
+    background-size: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    box-shadow: 0px 0px 10px #333;
+}
+/*------------------------------------------------------------*/
+
+.slider{
+    padding: 80px 0;
+    background-image: url(../images/Industria-4-0_BG.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0px 0px 7px #333;
+
+}
+
+.slider .slider-width{
+    display: flex;
+    transition: all ease 0.5s;
+}
+
+.slider .slider-item{
+    width: 100vw;
+    
+}
+
+.section-industry .slide-area{
+    display: flex;  
+    justify-content: center;
+    
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.section-industry .text{
+    width: 520px; 
+    margin-right: 5px;   
+    margin-left: 50px;
+    
+}
+.section-industry .title{
+    color: var(--orange);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;    
+}
+
+.section-industry .text h2{
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.section-industry .text p{
+    font-size: 1rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #FFF;
+}
+
+.section-industry .text .text-laboratory{
+    line-height: 25px;
+}
+
+.section-industry .image-factory{
+    background-image: url(../images/Fabrica.jpg);
+}
+.section-industry .image-industry{
+    background-image: url(../images/Industria-4-0.jpg);
+}
+.section-industry .image-laboratory{
+    background-image: url(../images/Laboratorio.jpg);
+}
+
+.section-industry .image-factory,
+.section-industry .image-industry,
+.section-industry .image-laboratory{
+    width: 750px;
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 50px;
+    box-shadow: 0px 0px 10px #333; 
+}
+
+.slider-controls{
+    position: absolute;
+    z-index:99;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.slider-control{
+    width: 40px;
+    height: 40px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px; 
+}
+@keyframes arrow-rigth {
+    0% {margin-left: 0px;}
+    50% {margin-left: 15px;}
+    100% {margin-left: 0px;}
+}
+@keyframes arrow-left{
+    0%{margin-left: 15px;}
+    50%{margin-left: 0px;}
+    100%{margin-left: 15px;}
+}
+.arrow-rigth,
+.arrow-left{    
+    height: 25px;
+    opacity: 0.7;
+}
+.arrow-rigth:hover {
+    height: 27px;
+    animation-name: arrow-rigth;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.arrow-left:hover{
+    height: 27px;
+    animation-name: arrow-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
